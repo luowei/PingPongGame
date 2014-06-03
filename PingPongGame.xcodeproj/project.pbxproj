@@ -30,6 +30,8 @@
 		EA7E4C37193E0FA9002E3912 /* Menu04.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C2F193E0FA9002E3912 /* Menu04.png */; };
 		EA7E4C38193E0FA9002E3912 /* Menu05.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C30193E0FA9002E3912 /* Menu05.png */; };
 		EA7E4C39193E0FA9002E3912 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C31193E0FA9002E3912 /* Player.png */; };
+		EA7E4C3B193E10F4002E3912 /* doc in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C3A193E10F4002E3912 /* doc */; };
+		EA7E4C3E193E2119002E3912 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7E4C3D193E2119002E3912 /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,9 @@
 		EA7E4C2F193E0FA9002E3912 /* Menu04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu04.png; sourceTree = "<group>"; };
 		EA7E4C30193E0FA9002E3912 /* Menu05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu05.png; sourceTree = "<group>"; };
 		EA7E4C31193E0FA9002E3912 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		EA7E4C3A193E10F4002E3912 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		EA7E4C3C193E2119002E3912 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		EA7E4C3D193E2119002E3912 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 				EA7E4C08193E085E002E3912 /* PingPongGameTests */,
 				EA7E4BE2193E085E002E3912 /* Frameworks */,
 				EA7E4BE1193E085E002E3912 /* Products */,
+				EA7E4C3A193E10F4002E3912 /* doc */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +142,8 @@
 				EA7E4BF5193E085E002E3912 /* Main.storyboard */,
 				EA7E4BF8193E085E002E3912 /* ViewController.h */,
 				EA7E4BF9193E085E002E3912 /* ViewController.m */,
+				EA7E4C3C193E2119002E3912 /* Game.h */,
+				EA7E4C3D193E2119002E3912 /* Game.m */,
 				EA7E4BFB193E085E002E3912 /* Images.xcassets */,
 				EA7E4BEA193E085E002E3912 /* Supporting Files */,
 			);
@@ -255,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7E4C3B193E10F4002E3912 /* doc in Resources */,
 				EA7E4BFC193E085E002E3912 /* Images.xcassets in Resources */,
 				EA7E4C36193E0FA9002E3912 /* Menu03.png in Resources */,
 				EA7E4C39193E0FA9002E3912 /* Player.png in Resources */,
@@ -288,6 +297,7 @@
 				EA7E4BFA193E085E002E3912 /* ViewController.m in Sources */,
 				EA7E4BF4193E085E002E3912 /* AppDelegate.m in Sources */,
 				EA7E4BF0193E085E002E3912 /* main.m in Sources */,
+				EA7E4C3E193E2119002E3912 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

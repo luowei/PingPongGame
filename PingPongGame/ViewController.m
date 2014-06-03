@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *animateBackground;
 
 @end
 
@@ -17,7 +18,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    _animateBackground.animationImages = [[NSArray alloc]initWithObjects:
+                                          [UIImage imageNamed:@"Menu01.png"],
+                                          [UIImage imageNamed:@"Menu02.png"],
+                                          [UIImage imageNamed:@"Menu03.png"],
+                                          [UIImage imageNamed:@"Menu04.png"],
+                                          [UIImage imageNamed:@"Menu05.png"],
+                                          nil];
+    [_animateBackground setAnimationRepeatCount:0];
+    _animateBackground.animationDuration  = 5;
+    [_animateBackground startAnimating];
 }
 
 - (void)didReceiveMemoryWarning
