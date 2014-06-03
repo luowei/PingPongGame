@@ -21,6 +21,15 @@
 		EA7E4C05193E085E002E3912 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7E4BE7193E085E002E3912 /* UIKit.framework */; };
 		EA7E4C0D193E085F002E3912 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C0B193E085F002E3912 /* InfoPlist.strings */; };
 		EA7E4C0F193E085F002E3912 /* PingPongGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7E4C0E193E085F002E3912 /* PingPongGameTests.m */; };
+		EA7E4C19193E095A002E3912 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C18193E095A002E3912 /* README.md */; };
+		EA7E4C32193E0FA9002E3912 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C2A193E0FA9002E3912 /* Ball.png */; };
+		EA7E4C33193E0FA9002E3912 /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C2B193E0FA9002E3912 /* GameBackGround.png */; };
+		EA7E4C34193E0FA9002E3912 /* Menu01.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C2C193E0FA9002E3912 /* Menu01.png */; };
+		EA7E4C35193E0FA9002E3912 /* Menu02.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C2D193E0FA9002E3912 /* Menu02.png */; };
+		EA7E4C36193E0FA9002E3912 /* Menu03.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C2E193E0FA9002E3912 /* Menu03.png */; };
+		EA7E4C37193E0FA9002E3912 /* Menu04.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C2F193E0FA9002E3912 /* Menu04.png */; };
+		EA7E4C38193E0FA9002E3912 /* Menu05.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C30193E0FA9002E3912 /* Menu05.png */; };
+		EA7E4C39193E0FA9002E3912 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7E4C31193E0FA9002E3912 /* Player.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,15 @@
 		EA7E4C0A193E085F002E3912 /* PingPongGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PingPongGameTests-Info.plist"; sourceTree = "<group>"; };
 		EA7E4C0C193E085F002E3912 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA7E4C0E193E085F002E3912 /* PingPongGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingPongGameTests.m; sourceTree = "<group>"; };
+		EA7E4C18193E095A002E3912 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EA7E4C2A193E0FA9002E3912 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		EA7E4C2B193E0FA9002E3912 /* GameBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameBackGround.png; sourceTree = "<group>"; };
+		EA7E4C2C193E0FA9002E3912 /* Menu01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu01.png; sourceTree = "<group>"; };
+		EA7E4C2D193E0FA9002E3912 /* Menu02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu02.png; sourceTree = "<group>"; };
+		EA7E4C2E193E0FA9002E3912 /* Menu03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu03.png; sourceTree = "<group>"; };
+		EA7E4C2F193E0FA9002E3912 /* Menu04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu04.png; sourceTree = "<group>"; };
+		EA7E4C30193E0FA9002E3912 /* Menu05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu05.png; sourceTree = "<group>"; };
+		EA7E4C31193E0FA9002E3912 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,7 @@
 		EA7E4BD7193E085E002E3912 = {
 			isa = PBXGroup;
 			children = (
+				EA7E4C18193E095A002E3912 /* README.md */,
 				EA7E4BE9193E085E002E3912 /* PingPongGame */,
 				EA7E4C08193E085E002E3912 /* PingPongGameTests */,
 				EA7E4BE2193E085E002E3912 /* Frameworks */,
@@ -126,6 +145,14 @@
 		EA7E4BEA193E085E002E3912 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA7E4C2A193E0FA9002E3912 /* Ball.png */,
+				EA7E4C2B193E0FA9002E3912 /* GameBackGround.png */,
+				EA7E4C2C193E0FA9002E3912 /* Menu01.png */,
+				EA7E4C2D193E0FA9002E3912 /* Menu02.png */,
+				EA7E4C2E193E0FA9002E3912 /* Menu03.png */,
+				EA7E4C2F193E0FA9002E3912 /* Menu04.png */,
+				EA7E4C30193E0FA9002E3912 /* Menu05.png */,
+				EA7E4C31193E0FA9002E3912 /* Player.png */,
 				EA7E4BEB193E085E002E3912 /* PingPongGame-Info.plist */,
 				EA7E4BEC193E085E002E3912 /* InfoPlist.strings */,
 				EA7E4BEF193E085E002E3912 /* main.m */,
@@ -229,8 +256,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7E4BFC193E085E002E3912 /* Images.xcassets in Resources */,
+				EA7E4C36193E0FA9002E3912 /* Menu03.png in Resources */,
+				EA7E4C39193E0FA9002E3912 /* Player.png in Resources */,
+				EA7E4C34193E0FA9002E3912 /* Menu01.png in Resources */,
 				EA7E4BEE193E085E002E3912 /* InfoPlist.strings in Resources */,
+				EA7E4C38193E0FA9002E3912 /* Menu05.png in Resources */,
+				EA7E4C37193E0FA9002E3912 /* Menu04.png in Resources */,
+				EA7E4C32193E0FA9002E3912 /* Ball.png in Resources */,
+				EA7E4C35193E0FA9002E3912 /* Menu02.png in Resources */,
+				EA7E4C19193E095A002E3912 /* README.md in Resources */,
 				EA7E4BF7193E085E002E3912 /* Main.storyboard in Resources */,
+				EA7E4C33193E0FA9002E3912 /* GameBackGround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
