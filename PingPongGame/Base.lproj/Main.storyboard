@@ -40,6 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="11"/>
         </scene>
         <!--Game-->
         <scene sceneID="fQ3-Ok-ndt">
@@ -72,11 +73,21 @@
                                     <action selector="startButton:" destination="Vw2-mE-11h" eventType="touchUpInside" id="tJx-rb-MF2"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Player.png" translatesAutoresizingMaskIntoConstraints="NO" id="GnS-k4-sLI">
+                                <rect key="frame" x="120" y="37" width="80" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Player.png" translatesAutoresizingMaskIntoConstraints="NO" id="74x-22-WRm">
+                                <rect key="frame" x="120" y="510" width="80" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="ball" destination="f65-aM-VBK" id="N4p-uM-CiA"/>
+                        <outlet property="computer" destination="GnS-k4-sLI" id="Ih1-Qq-WFN"/>
+                        <outlet property="player" destination="74x-22-WRm" id="sS2-ww-LnO"/>
                         <outlet property="startButton" destination="Z1s-fE-nqo" id="Wg7-uY-rBA"/>
                     </connections>
                 </viewController>
@@ -89,6 +100,7 @@
         <image name="Ball.png" width="34" height="35"/>
         <image name="GameBackGround.png" width="320" height="480"/>
         <image name="Menu05.png" width="320" height="480"/>
+        <image name="Player.png" width="58" height="18"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

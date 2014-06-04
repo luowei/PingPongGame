@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A34E0253-E862-415F-99E2-1583F37EC547</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PingPongGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE727791-1A25-4A12-A560-E308AA4F6C82</key>
+		<string>https://github.com/luowei/PingPongGame.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PingPongGame.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE727791-1A25-4A12-A560-E308AA4F6C82</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/luowei/PingPongGame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE727791-1A25-4A12-A560-E308AA4F6C82</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE727791-1A25-4A12-A560-E308AA4F6C82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PingPongGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>

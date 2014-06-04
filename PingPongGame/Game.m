@@ -17,11 +17,43 @@ int X;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *ball;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIImageView *player;
+@property (weak, nonatomic) IBOutlet UIImageView *computer;
 
 @end
 
 @implementation Game
 
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *drag = [[event allTouches] anyObject];
+    _player.center = [drag locationInView:self.view];
+    
+    if(_player.center.y > 520 || _player.center.y < 520){
+        _player.center = CGPointMake(_player.center.x, 520);
+    }
+    if(_player.center.x < 40){
+        _player.center = CGPointMake(40, _player.center.y);
+    }
+    if(_player.center.x > 280){
+        _player.center = CGPointMake(280, _player.center.y);
+    }
+}
+
+//computer 跟着球走
+-(void)computerMovement{
+    if(_computer.center.x > _ball.center.x){
+        _computer.center = CGPointMake(_computer.center.x-2, _computer.center.y);
+    }
+    if(_computer.center.x < _ball.center.x){
+        _computer.center = CGPointMake(_computer.center.x + 2, _computer.center.y);
+    }
+    if(_computer.center.x < 40){
+        _computer.center = CGPointMake(40, _computer.center.y);
+    }
+    if(_computer.center.x > 280){
+        _computer.center = CGPointMake(280, _computer.center.y);
+    }
+}
 
 //开始发球
 - (IBAction)startButton:(id)sender {
@@ -45,6 +77,8 @@ int X;
 }
 
 -(void)ballMovement{
+    [self computerMovement];
+    
     _ball.center = CGPointMake(_ball.center.x+X, _ball.center.y+Y);
     
     if(_ball.center.x < 0 || _ball.center.x > 290){
