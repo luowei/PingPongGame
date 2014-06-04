@@ -10,6 +10,8 @@
 
 int Y;
 int X;
+int playerScoreNumber;
+int computerScoreNumber;
 
 @interface Game (){
     NSTimer *timer;
@@ -19,10 +21,26 @@ int X;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIImageView *player;
 @property (weak, nonatomic) IBOutlet UIImageView *computer;
+@property (weak, nonatomic) IBOutlet UILabel *playScore;
+@property (weak, nonatomic) IBOutlet UILabel *computerScore;
+@property (weak, nonatomic) IBOutlet UILabel *winOrLose;
+@property (weak, nonatomic) IBOutlet UIButton *exit;
 
 @end
 
 @implementation Game
+
+//发生碰撞，球往回弹
+-(void)collision{
+    if(CGRectIntersectsRect(_player.frame, _ball.frame)){
+        Y = arc4random() % 5;
+        Y = 0 - Y;
+    }
+    if (CGRectIntersectsRect(_computer.frame, _ball.frame)) {
+        Y = arc4random() % 5;
+    }
+    
+}
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *drag = [[event allTouches] anyObject];
@@ -53,10 +71,53 @@ int X;
     if(_computer.center.x > 280){
         _computer.center = CGPointMake(280, _computer.center.y);
     }
+    
+    //computer失误
+    if(_ball.center.y < 0){
+        playerScoreNumber += 1;
+        _playScore.text = [NSString stringWithFormat:@"%i",playerScoreNumber];
+        
+        [timer invalidate];
+        _startButton.hidden = NO;
+        
+        _ball.center = CGPointMake(160, 227);
+        _computer.center = CGPointMake(160, 40);
+        _player.center = CGPointMake(160, 510);
+        
+        if(playerScoreNumber > 10){
+            _startButton.hidden = YES;
+            _exit.hidden = NO;
+            _winOrLose.hidden = NO;
+            _winOrLose.text = [NSString stringWithFormat:@"你赢了！！"];
+        }
+    }
+    
+    //player失误
+    if(_ball.center.y > 510){
+        computerScoreNumber += 1;
+        _computerScore.text = [NSString stringWithFormat:@"%i",computerScoreNumber];
+        [timer invalidate];
+        _startButton.hidden = NO;
+        
+        _ball.center = CGPointMake(160, 227);
+        _computer.center = CGPointMake(160, 40);
+        _player.center = CGPointMake(160, 510);
+        
+        if(computerScoreNumber > 10){
+            _startButton.hidden = YES;
+            _exit.hidden = NO;
+            _winOrLose.hidden = NO;
+            _winOrLose.text = [NSString stringWithFormat:@"你输了！"];
+        }
+    }
 }
 
 //开始发球
 - (IBAction)startButton:(id)sender {
+    
+    _startButton.hidden = YES;
+    _exit.hidden = YES;
+    
     Y = arc4random() % 11;
     Y -= 5;
     
@@ -78,6 +139,7 @@ int X;
 
 -(void)ballMovement{
     [self computerMovement];
+    [self collision];
     
     _ball.center = CGPointMake(_ball.center.x+X, _ball.center.y+Y);
     
@@ -99,7 +161,9 @@ int X;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    playerScoreNumber = 0;
+    computerScoreNumber = 0;
 }
 
 - (void)didReceiveMemoryWarning

@@ -5,3 +5,4 @@ PingPongGame
 
 
 ![PingPongGame](https://raw.githubusercontent.com/luowei/PingPongGame/master/doc/a.png)
+![PingPongGame](https://raw.githubusercontent.com/luowei/PingPongGame/master/doc/b.png)
