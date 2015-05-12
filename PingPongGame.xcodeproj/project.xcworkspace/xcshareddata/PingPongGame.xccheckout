@@ -10,29 +10,29 @@
 	<string>PingPongGame</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>BE727791-1A25-4A12-A560-E308AA4F6C82</key>
+		<key>BB49B7F037CF46C83B7482FA152BC1F26AF9A2CC</key>
 		<string>https://github.com/luowei/PingPongGame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PingPongGame.xcodeproj/project.xcworkspace</string>
+	<string>PingPongGame.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>BE727791-1A25-4A12-A560-E308AA4F6C82</key>
+		<key>BB49B7F037CF46C83B7482FA152BC1F26AF9A2CC</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/luowei/PingPongGame.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>BE727791-1A25-4A12-A560-E308AA4F6C82</string>
+	<string>BB49B7F037CF46C83B7482FA152BC1F26AF9A2CC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>BE727791-1A25-4A12-A560-E308AA4F6C82</string>
+			<string>BB49B7F037CF46C83B7482FA152BC1F26AF9A2CC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PingPongGame</string>
 		</dict>

@@ -502,6 +502,7 @@
 				EA7E4C14193E085F002E3912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA7E4C15193E085F002E3912 /* Build configuration list for PBXNativeTarget "PingPongGameTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +511,7 @@
 				EA7E4C17193E085F002E3912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
