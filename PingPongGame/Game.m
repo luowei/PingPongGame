@@ -145,7 +145,7 @@ int computerScoreNumber;
     
     _ball.center = CGPointMake(_ball.center.x+X, _ball.center.y+Y);
     
-    if(_ball.center.x < 0 || _ball.center.x > 290){
+    if(_ball.center.x < 20 || _ball.center.x > SCREEN_SIZE.width-20){
         X = 0 - X;
     }
     
