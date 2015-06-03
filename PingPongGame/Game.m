@@ -8,6 +8,8 @@
 
 #import "Game.h"
 
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+
 int Y;
 int X;
 int playerScoreNumber;
@@ -39,21 +41,21 @@ int computerScoreNumber;
     if (CGRectIntersectsRect(_computer.frame, _ball.frame)) {
         Y = arc4random() % 5;
     }
-    
+
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *drag = [[event allTouches] anyObject];
     _player.center = [drag locationInView:self.view];
     
-    if(_player.center.y > 520 || _player.center.y < 520){
-        _player.center = CGPointMake(_player.center.x, 520);
+    if(_player.center.y > SCREEN_SIZE.height-50 || _player.center.y < SCREEN_SIZE.height-50){
+        _player.center = CGPointMake(_player.center.x, SCREEN_SIZE.height-50);
     }
     if(_player.center.x < 40){
         _player.center = CGPointMake(40, _player.center.y);
     }
-    if(_player.center.x > 280){
-        _player.center = CGPointMake(280, _player.center.y);
+    if(_player.center.x > SCREEN_SIZE.width-40){
+        _player.center = CGPointMake(SCREEN_SIZE.width-40, _player.center.y);
     }
 }
 
@@ -68,22 +70,17 @@ int computerScoreNumber;
     if(_computer.center.x < 40){
         _computer.center = CGPointMake(40, _computer.center.y);
     }
-    if(_computer.center.x > 280){
-        _computer.center = CGPointMake(280, _computer.center.y);
+    if(_computer.center.x > SCREEN_SIZE.width-40){
+        _computer.center = CGPointMake(SCREEN_SIZE.width-40, _computer.center.y);
     }
     
     //computer失误
-    if(_ball.center.y < 0){
+    if(_ball.center.y < 50){
         playerScoreNumber += 1;
         _playScore.text = [NSString stringWithFormat:@"%i",playerScoreNumber];
-        
-        [timer invalidate];
-        _startButton.hidden = NO;
-        
-        _ball.center = CGPointMake(160, 227);
-        _computer.center = CGPointMake(160, 40);
-        _player.center = CGPointMake(160, 510);
-        
+
+        [self resetGame];
+
         if(playerScoreNumber > 10){
             _startButton.hidden = YES;
             _exit.hidden = NO;
@@ -93,16 +90,12 @@ int computerScoreNumber;
     }
     
     //player失误
-    if(_ball.center.y > 510){
+    if(_ball.center.y > SCREEN_SIZE.height-50){
         computerScoreNumber += 1;
         _computerScore.text = [NSString stringWithFormat:@"%i",computerScoreNumber];
-        [timer invalidate];
-        _startButton.hidden = NO;
-        
-        _ball.center = CGPointMake(160, 227);
-        _computer.center = CGPointMake(160, 40);
-        _player.center = CGPointMake(160, 510);
-        
+
+        [self resetGame];
+
         if(computerScoreNumber > 10){
             _startButton.hidden = YES;
             _exit.hidden = NO;
@@ -110,6 +103,15 @@ int computerScoreNumber;
             _winOrLose.text = [NSString stringWithFormat:@"你输了！"];
         }
     }
+}
+
+- (void)resetGame {
+    [timer invalidate];
+    _startButton.hidden = NO;
+
+    _ball.center = CGPointMake(SCREEN_SIZE.width/2+15, SCREEN_SIZE.height/2-45);
+    _computer.center = CGPointMake(SCREEN_SIZE.width/2+40, 50);
+    _player.center = CGPointMake(SCREEN_SIZE.width/2+40, SCREEN_SIZE.height-50);
 }
 
 //开始发球
