@@ -1,5 +1,7 @@
 PingPongGame
 =========
+AppStore下载地址:https://itunes.apple.com/cn/app/kuai-le-ping-pang-qiu/id1001605741?mt=8
+
 
 乒乓球小游戏示例程序。。
 
