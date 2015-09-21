@@ -234,6 +234,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = rootls;
 				TargetAttributes = {
+					EA7E4BDF193E085E002E3912 = {
+						DevelopmentTeam = G3A2KYKYBU;
+					};
 					EA7E4C00193E085E002E3912 = {
 						TestTargetID = EA7E4BDF193E085E002E3912;
 					};
